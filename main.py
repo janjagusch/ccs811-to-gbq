@@ -37,7 +37,7 @@ class CCS811(adafruit_ccs811.CCS811):
         while not self.data_ready:
             time.sleep(self._READY_WAIT_TIME)
         eco2, tvoc = self.eco2, self.tvoc
-        while not eco2 < 400:
+        while eco2 < 400:
             time.sleep(self._READY_WAIT_TIME)
             eco2, tvoc = self.eco2, self.tvoc
         return {"eco2": eco2, "tvoc": tvoc}
