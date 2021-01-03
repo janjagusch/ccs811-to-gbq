@@ -10,6 +10,7 @@ import adafruit_ccs811
 import board
 import busio
 from dotenv import load_dotenv
+from google.cloud import bigquery
 
 
 class CCS811(adafruit_ccs811.CCS811):
