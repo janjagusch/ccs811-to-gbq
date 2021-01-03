@@ -30,7 +30,7 @@ class CCS811(adafruit_ccs811.CCS811):
         """
         Creates an instance of CCS881 from environment variables.
         """
-        return cls(os.environ["CCS881_SENSOR_ID"])
+        return cls(os.environ["CCS811_SENSOR_ID"])
 
     @property
     def _measurement(self):
