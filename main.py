@@ -22,7 +22,7 @@ class CCS811(adafruit_ccs811.CCS811):
 
     def __init__(self, sensor_id):
         i2c = busio.I2C(board.SCL, board.SDA)
-        super().__init(i2c)
+        super().__init__(i2c)
         self._sensor_id = sensor_id
 
     @classmethod
