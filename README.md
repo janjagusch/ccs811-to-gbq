@@ -10,6 +10,8 @@ This sensor is not supported well for the Raspberry Pi since it uses I2C clock s
 
 In `/boot/config.txt`, find the line containing "dtparam=i2c_arm=on" and add ",i2c_arm_baudrate=10000" where `10000` is the new speed (10 Kbit/s). **Note the comma.**
 
+Afterwards, reboot.
+
 ### Requirements
 
 Install the dependencies in `requirements.txt` and activate the virtual environment.
