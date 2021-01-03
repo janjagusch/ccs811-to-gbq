@@ -78,4 +78,4 @@ if __name__ == "__main__":
     sensor = CCS811.from_env()
     measurement = sensor.measurement
     print(measurement)
-    # _gbq_insert(measurement, client, table)
+    _gbq_insert(measurement, client, table)
